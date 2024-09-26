@@ -1,0 +1,9 @@
+@import '../../../assets/theme/_var.scss';
+.nothing_found {
+  text-align: center !important;
+  width: 100%;
+  background-color: $white !important;
+  h4 {
+    font-size: 1.4rem;
+  }
+}

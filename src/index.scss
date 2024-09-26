@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import "./assets/theme/_var.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $basefont;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  margin-bottom: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.table {
+  --bs-table-bg: transparent;
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: rgba($black, 0.1);
+  border-radius: 4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 5rem;
+  background-color: rgba($baseclr, 0.2);
+}
+
+.container {
+  // @media (min-width: 1400px) {
+  max-width: 145rem;
+  // }
+  @media (max-width: 1679px) {
+    max-width: 120rem;
+  }
+}
+
+.select_project {
+  margin-bottom: 1rem;
+}
+
+.submit_btn {
+  display: flex;
+  justify-content: center;
+
+  button {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
+
+.card_in {
+  padding: 2.5rem 2rem;
+  border-radius: 1.6rem;
+  background-color: rgba($baseclr2, 0.05);
+
+  @media (max-width: 767px) {
+    padding: 2rem;
+  }
+}
+
+.custom_datepicer {
+  //   width: 16rem;
+  margin-inline-start: auto;
+  position: relative;
+
+  .custom_datepicker_input {
+    width: 100%;
+    border-radius: 0.8rem;
+    background-color: transparent;
+    border: 2px solid rgba($baseclr, 0.4);
+    outline: none;
+    outline: none;
+    height: 4.4rem;
+    font-size: 1.6rem;
+    padding: 0 2.4rem;
+    color: $black;
+
+    &:focus {
+      border-color: $baseclr;
+    }
+
+    &::placeholder {
+      color: rgba($baseclr, 0.7);
+    }
+
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+      transition: background-color 9999s ease-in-out 0s;
+      border: 1px solid $baseclr;
+      -webkit-text-fill-color: $black !important;
+    }
+  }
+
+  .react-datepicker {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+      0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+    font-family: inherit;
+    width: 22rem;
+    border-radius: 0.8rem;
+    background-color: $dropdownclr;
+    border: 1px solid rgba($white, 0.4);
+
+    .react-datepicker__month-container {
+      width: 100%;
+    }
+
+    .react-datepicker__current-month {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    .react-datepicker__navigation {
+      &.react-datepicker__navigation--next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .react-datepicker__navigation-icon {
+          top: 3px;
+        }
+      }
+    }
+
+    .react-datepicker__day-names {
+      display: flex;
+      justify-content: space-between;
+
+      .react-datepicker__day-name {
+        padding: 0.1rem;
+      }
+    }
+
+    .react-datepicker__week {
+      display: flex;
+      justify-content: space-between;
+
+      .react-datepicker__day {
+        font-size: 1.3rem;
+      }
+    }
+
+    .react-datepicker__day-name {
+      font-size: 1.4rem;
+    }
+  }
+}
+.tooltip {
+  position: absolute !important;
+}
+
+.members-tooltip {
+  &-btn {
+    background-color: $baseclr2;
+    color: $white;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+  }
+  .tooltip-inner {
+    width: fit-content;
+    padding: 1rem;
+    text-align: left;
+    ul {
+      li {
+        display: block;
+        color: $white;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}

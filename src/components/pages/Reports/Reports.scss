@@ -1,0 +1,37 @@
+@import "../../../assets/theme/_var.scss";
+
+.reports_page {
+
+    .filters {
+        display: flex;
+        align-items: flex-end;
+        margin: 0 -0.75rem 2.4rem;
+
+        @media (max-width: 575px) {
+            flex-wrap: wrap;
+        }
+
+        .filter_option {
+            width: 20rem;
+            padding: 0.75rem;
+
+            @media (max-width: 575px) {
+                width: 50%;
+            }
+
+            @media (max-width: 399px) {
+                width: 100%;
+            }
+        }
+
+        .filter_action {
+            // margin-top: 2.5rem;
+            width: auto;
+
+            @media (max-width: 575px) {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    }
+}

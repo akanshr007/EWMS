@@ -1,0 +1,15 @@
+@import '../../../assets/theme/_var.scss';
+
+.footer {
+    padding: 2rem;
+    background-color: $baseclr2;
+    margin-top: auto;
+
+    &_in {
+        p {
+            text-align: center;
+            font-size: 1.4rem;
+            color: $white;
+        }
+    }
+}

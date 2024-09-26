@@ -1,0 +1,77 @@
+@import "../../../assets/theme/_var.scss";
+
+.customPagination {
+  .pagination {
+    justify-content: center;
+    margin-top: 1rem;
+    li {
+      padding: 0 5px;
+
+      a {
+        width: 30px;
+        height: 30px;
+        border-radius: 10rem;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        color: $black;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+
+        @media (max-width: 767px) {
+          width: 25px;
+          height: 25px;
+          font-size: 1.3rem;
+        }
+      }
+
+      &:first-child,
+      &:last-child {
+        a {
+          background-color: transparent;
+          border: 0;
+
+          svg {
+            width: 0.7rem;
+
+            @media (max-width: 767px) {
+              width: 1.3rem;
+              height: 1rem;
+            }
+
+            path {
+              transition: all ease-in-out 0.3s;
+            }
+          }
+
+          &:hover {
+            background-color: transparent !important;
+            border: 0;
+            svg {
+              path {
+                fill: $baseclr2;
+              }
+            }
+          }
+        }
+      }
+
+      &.active,
+      &:hover {
+        a {
+          background-color: $baseclr2;
+          color: $white;
+        }
+      }
+    }
+    .ellipsis {
+      a {
+        background-color: transparent;
+        color: $black;
+      }
+    }
+  }
+}

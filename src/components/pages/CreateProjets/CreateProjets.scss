@@ -1,0 +1,104 @@
+@import '../../../assets/theme/_var.scss';
+
+.create_projects {
+    .projects_filter {
+        .team_project {
+            padding: 2rem;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            background-color: $white;
+
+            &_inner {
+                display: flex;
+                align-items: center;
+                // gap: 1.5rem;
+                flex-wrap: wrap;
+                position: relative;
+                margin: 0 -.75rem;
+
+                // @media (max-width:991px) {
+                //     gap: 0.8rem;
+                // }
+
+                >div {
+
+                    flex: 0 0 33.333333%;
+                    max-width: 33.333333%;
+                    padding: 0 .75rem;
+
+                   
+
+                    // @media (max-width:575px) {
+                    //     width: 93%;
+                    // }
+                }
+
+
+                .delete_icon {
+                    // margin-top: 1.5rem;
+                    cursor: pointer;
+                    position: absolute;
+                    top: -1.7rem;
+                    right: -1rem;
+                    height: 3rem;
+                    width: 3rem;
+                    z-index: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+
+                    svg {
+                        width: 1.4rem;
+                        height: 1.4rem;
+                    }
+                }
+                @media (max-width:1199px) {
+                   > div {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                   }
+                }
+                @media (max-width:767px) {
+                    > div {
+                     flex: 0 0 100%;
+                     max-width: 100%;
+                    }
+                 }
+            }
+            @media (max-width:1279px) {
+                padding: 2rem 1.5rem;
+            }
+        }
+
+        .add_form {
+            border-top: 0;
+            padding: 0;
+        }
+
+        .create_btns {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+            margin-top: 2rem;
+
+            @media (max-width:575px) {
+                display: block;
+                margin-top: 1rem;
+
+                button {
+                    width: 100%;
+                }
+
+                .create {
+                    margin-top: 2rem;
+                }
+            }
+
+            .create {
+                padding: 1.2rem 6rem;
+            }
+        }
+    }
+}

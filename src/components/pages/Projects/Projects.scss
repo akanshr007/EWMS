@@ -1,0 +1,33 @@
+@import "../../../assets/theme/_var.scss";
+
+.project_page {
+  .projects_heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    @media (max-width: 479px) {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+      }
+    }
+  &.addpro {
+    margin-bottom: 1.5rem;
+  }
+  }
+
+  .project_table {
+    margin-top: 1rem;
+  }
+  .card
+  {
+    &_in {
+      padding-bottom: 0;
+    }
+  }
+  
+}
+

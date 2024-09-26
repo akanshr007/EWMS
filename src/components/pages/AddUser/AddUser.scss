@@ -1,0 +1,10 @@
+@import '../../../assets/theme/_var.scss';
+.adduser {
+    &_table {
+        &_email {
+            span {
+                display: block;
+            }
+        }
+    }
+}

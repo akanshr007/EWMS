@@ -1,0 +1,89 @@
+@import "../../../../assets/theme/_var.scss";
+
+.profile_dropdown {
+  .dropdown-toggle {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none;
+    padding: 0;
+    outline: none;
+
+    img {
+      width: 4.8rem;
+      height: 4.8rem;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: unset;
+    }
+  }
+
+  .dropdown-user-info {
+    display: flex;
+    align-items: center;
+    img {
+      width: 4.8rem;
+      height: 4.8rem;
+      border-radius: 50%;
+    }
+    .role {
+      color: $baseclr2;
+    }
+  }
+
+  .dropdown-menu {
+    right: 0 !important;
+    left: unset !important;
+    box-shadow: 0 0 0.6rem 0.6rem rgba($black, 0.03);
+    border-radius: 0.8rem;
+    background-color: $dropdownclr;
+    padding: 0.8rem;
+    border: 1px solid rgba($white, 0.4);
+    width: max-content !important;
+
+    a,
+    button {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 1.6rem;
+      border-radius: 0.8rem;
+      display: block;
+      font-weight: 400;
+      white-space: nowrap;
+      color: $black;
+      transition: 200ms ease-in-out;
+      font-size: 1.2rem;
+
+      svg {
+        height: 2rem;
+        width: 2rem;
+        path {
+          transition: 200ms ease-in-out;
+          fill: $black;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 0.1rem;
+      }
+
+      &:hover,
+      &.active {
+        background-color: $baseclr2;
+        color: $white;
+
+        svg {
+          path {
+            fill: $white;
+          }
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

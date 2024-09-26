@@ -1,0 +1,79 @@
+@import "../../../assets/theme/_var.scss";
+
+
+.add_report {
+    p.qoute {
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        text-align: center;
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        font-weight: 500;
+        color: $baseclr2;
+    }
+    h3 {
+        margin-bottom: 1.6rem;
+        font-size: 2rem;
+    }
+
+    // hr {
+    //     margin: 2rem 0;
+    // }
+
+    .working_hours {
+        // margin-top: 2rem;
+
+        .row {
+            margin: -0.8rem;
+
+            >div {
+                padding: 0.8rem;
+            }
+        }
+
+        .working_hours_field {
+            .working_hours_field_in {
+                display: flex;
+                align-items: flex-start;
+                // padding: 1.6rem;
+                border-radius: 1rem;
+                // background-color: $white;
+
+                >div {
+                    &:not(:last-child) {
+                        margin-right: 0.8rem;
+                    }
+                }
+            }
+        }
+    &.wk {
+        max-width: 100rem;
+    }
+    }
+
+    &_single {
+        background-color: $white;
+        padding: 2rem;
+        box-shadow: 0 0 2rem rgba($black, .05);
+        border-radius: 1rem;
+        margin: 0 0 2rem;
+
+        .working_hours {
+            >div {
+                >div {
+                    @media (min-width:992px) {
+                        flex: 0 0 13rem;
+                        max-width: 13rem;
+
+                        &:last-child {
+                            input {
+                                max-width: 5.3rem;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

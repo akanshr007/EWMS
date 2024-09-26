@@ -1,0 +1,99 @@
+@import "../../../../assets/theme/_var.scss";
+
+.custom_input {
+  margin-bottom: 1rem;
+
+  .input_in {
+    input,
+    textarea {
+      width: 100%;
+      border-radius: 0.8rem;
+      background-color: transparent;
+      border: .1rem solid rgba($baseclr, 0.4);
+      outline: none;
+      outline: none;
+      height: 4rem;
+      font-size: 1.2rem;
+      padding: 0 1rem;
+      color: $black;
+      @media (max-width:1439px) {
+        font-size: 1.2rem;
+        height: 3.6rem;
+      }
+
+      &:focus {
+        border-color: $baseclr;
+      }
+
+      &::placeholder {
+        color: rgba($baseclr, 0.3);
+      }
+
+      &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        transition: background-color 9999s ease-in-out 0s;
+        border: .1rem solid $baseclr;
+        -webkit-text-fill-color: $black !important;
+      }
+    }
+
+    &.icon_input {
+      position: relative;
+
+      input {
+        padding-left: 4rem;
+      }
+
+      .input_icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0.8rem;
+
+        svg {
+          width: 2rem;
+
+          path {
+            fill: $black;
+          }
+        }
+      }
+    }
+
+    &.right_icon_input {
+      position: relative;
+
+      input {
+        padding-right: 4rem;
+      }
+
+      .input_right_icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.8rem;
+
+        svg {
+          width: 2rem;
+
+          path {
+            fill: $black;
+          }
+        }
+      }
+    }
+  }
+
+  .disabled {
+    input {
+      background-color: rgba(128, 128, 128, 0.179);
+      color: rgba($baseclr, 0.6);
+      cursor: not-allowed;
+      &::placeholder {
+        color: rgba($baseclr, 0.3);
+        opacity: 1;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../../assets/theme/_var.scss";
+
+.main_layout {
+    min-height: 100dvh;
+    // background-image: url("../../../assets/images/gradient.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+    .layout_in {
+        padding: 4rem 0;
+        @media (max-width:1679px) {
+            padding: 2rem 0 3rem;
+        }
+    }
+}

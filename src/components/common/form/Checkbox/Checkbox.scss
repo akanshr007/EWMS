@@ -1,0 +1,30 @@
+@import "../../../../assets/theme/_var.scss";
+
+.custom_checkbox {
+    .checkbox_in {
+        display: flex;
+        align-items: center;
+
+        input {
+            appearance: none;
+            width: 2.4rem;
+            height: 2.4rem;
+            background-color: $whiteF2;
+            border: 1px solid rgba($black77, 0.1);
+            border-radius: 0.8rem;
+            transition: 200ms ease-in-out;
+            background-size: 3rem;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &:checked {
+                background-color: $baseclr2;
+                background-image: url("../../../../assets/icons/tick.svg");
+            }
+        }
+
+        label {
+            margin: 0 0 0 0.8rem;
+        }
+    }
+}

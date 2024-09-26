@@ -1,0 +1,72 @@
+@import "../../../../assets/theme/_var.scss";
+
+.phone_input {
+    .react-tel-input {
+        .form-control {
+            width: 100%;
+            box-shadow: none;
+            border-radius: 0.8rem;
+            border: 1px solid rgba($white, 0.4);
+            outline: none;
+            background-color: rgba($white, 1);
+            outline: none;
+            height: 4.4rem;
+            font-size: 1.6rem;
+            padding: 0 2.4rem 0 4rem;
+            color: $black;
+
+            &:focus {
+                border-color: $baseclr;
+            }
+
+            &::placeholder {
+                color: rgba($black, 0.5);
+            }
+        }
+
+        .flag-dropdown {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            box-shadow: none;
+
+            .selected-flag {
+                background-color: transparent;
+                width: 5rem;
+                padding-left: 0.8rem;
+            }
+
+            .country-list {
+                border-radius: 0.8rem;
+                background-color: $dropdownclr;
+                border: 1px solid rgba($white, 0.4);
+                font-family: $basefont;
+
+                li {
+                    background-color: transparent;
+                    cursor: pointer;
+                    transition: 300ms ease-in-out;
+                    font-size: 1.4rem;
+
+                    .dial-code {
+                        transition: 300ms ease-in-out;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 0.1rem;
+                    }
+
+                    &:hover,
+                    &.highlight {
+                        background-color: $baseclr2;
+                        color: $white;
+
+                        .dial-code {
+                            color: rgba($white, 0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

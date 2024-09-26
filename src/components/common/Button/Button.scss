@@ -1,0 +1,73 @@
+@import "../../../assets/theme/_var.scss";
+
+.custom_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 0.8rem;
+    outline: none;
+    border: 2px solid $baseclr;
+    height: 4.4rem;
+    background-color: $baseclr;
+    color: $white;
+    padding: 0 2rem;
+    transition: 200ms ease-in-out;
+
+    @media (max-width:575px) {
+        padding: 0 2rem;
+    }
+
+    svg {
+        path {
+            transition: 200ms ease-in-out;
+            fill: $white;
+        }
+    }
+
+    &:disabled {
+        background-color: $disableclr;
+        pointer-events: none;
+        border-color: $disableclr;
+    }
+
+    &:hover {
+        background-color: transparent;
+        color: $baseclr;
+
+        svg {
+            path {
+                fill: $baseclr;
+            }
+        }
+    }
+
+    .spinner-border {
+        width: 2rem;
+        height: 2rem;
+        border-width: 0.3rem;
+    }
+
+    &.border-btn {
+        border: 2px solid $baseclr;
+        background-color: transparent;
+        color: $baseclr;
+
+        &:hover {
+            background-color: $baseclr;
+            color: $white;
+
+            svg {
+                path {
+                    fill: $baseclr;
+                }
+            }
+        }
+    }
+    @media (max-width:1679px) {
+        height: 4rem;
+        font-size: 1.2rem;
+    }
+}

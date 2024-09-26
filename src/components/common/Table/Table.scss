@@ -1,0 +1,161 @@
+@import "../../../assets/theme/_var.scss";
+
+.custom_table {
+  // white-space: nowrap;
+ 
+
+  thead {
+    tr {
+      th {
+        background-color: $baseclr2;
+        color: $white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding: 1rem .5rem;
+        border: none;
+        vertical-align: top;
+        max-width: 15rem;
+        white-space: nowrap;
+        // word-break: break-word;
+        // @media (max-width: 575px) {
+        //   padding: 1.8rem 1.6rem;
+        // }
+
+        .thead_checkbox {
+          display: flex;
+          align-items: center;
+        }
+
+        &:first-child {
+          padding-left: 1.5rem;
+          border-top-left-radius: 0.8rem;
+          // border-bottom-left-radius: 0.8rem;
+        }
+
+        &:last-child {
+          padding-right: 1.5rem;
+          border-top-right-radius: 0.8rem;
+          // border-bottom-right-radius: 0.8rem;
+          text-align: right;
+        }
+      &.email {
+        max-width: inherit;
+      }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 1rem .5rem;
+        border: none;
+        vertical-align: middle;
+        border-bottom: 1px solid rgba($black, 0.1);
+        max-width: 15rem;
+        // word-break: break-word;
+        background-color: $white;
+        // white-space: nowrap;
+       
+
+        &:first-child {
+          padding-left: 1.5rem;
+        }
+        &:last-child{
+          padding-right: 1.5rem;
+        }
+
+        .table_action {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          > button {
+            height: auto;
+            padding: 0 1.6rem;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            color: $black;
+
+            svg {
+              path {
+                fill: $black;
+              }
+            }
+
+            &:not(:last-child) {
+              margin-right: 0.8rem;
+            }
+          }
+          &.edit-dlt {
+            a, button {
+              height: 3rem;
+              width: 3rem;
+              border: .1rem solid rgba($black, 0.2);
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: .5rem;
+              svg {
+                height: 1.8rem;
+                width: 1.8rem;
+              }
+            }
+          }
+        }
+        &.Active,
+        &.Available {
+          color: $green;
+        }
+        &.InActive {
+          color: $redclr;
+        }
+      &:last-child{
+        text-align: right;
+        div {
+          text-align: right;
+        }
+      }
+      &.email {
+        max-width: inherit;
+      }  
+    } 
+      &:last-child {
+        td {
+          border-bottom: 0;
+          &:first-child {
+            border-bottom-left-radius: 1rem;
+          }
+          &:last-child {            
+            border-bottom-right-radius: 1rem;
+          }
+          
+        }
+      }
+    }
+  }
+  &.striped {
+    tbody {
+      tr {
+        td {
+          border-bottom: 0;
+        }
+        &:nth-child(2n) {
+          background-color: rgba($black, 0.1);
+          td {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  .extra-row {
+    td {
+      background-color:$tabletd;
+    }
+  }
+}
