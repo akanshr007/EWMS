@@ -29,29 +29,6 @@ PMs can view detailed information about each project, including:
 - Original estimation
 - Variance between planned and actual effort
 
-### Profit and Loss Calculation
-
-The system calculates the profit or loss of each project by comparing the original estimation with the actual time cost. This information is crucial for evaluating project performance and making informed decisions.
-
-### Refining Estimations
-
-Based on the data collected from previous projects, PMs can refine their future estimations, leading to more accurate project planning and improved resource allocation.
-
-## Installation
-
-To install PCMS, follow these steps:
-
-# Clone the repository
-
-git clone http://repo.antiersolutions.com/pcms/frontend/pcms_frontend.git
-
-# Navigate to the project directory
-
-cd pcms_frontend
-
-# Install dependencies
-
-npm install
 
 # Start the application
 
